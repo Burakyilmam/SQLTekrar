@@ -1,0 +1,50 @@
+--Create
+--Create Table Mother(Id int NULL)
+--Create Database Lesson
+--Drop
+--Drop Database Lesson
+--Drop Table Mother
+--Alter
+--Alter Table Student ADD Age int NULL
+--Alter Table Student Drop Column Age
+--Alter Table Student Alter Column Age smallint
+--Select
+--Select * From Student
+--Select Name from Student
+--Select * from Student Where Name = 'Ali'
+--Select * from Student Where Name = 'Ali' order by Id DESC
+--Select Sum(Id) as ToplamId from Student
+--Select Min(Id) as MinId from Student
+--Select Max(Id) as MaxId from Student
+--Select Count(Id) as MinId from Student
+--Select Avg(Id) as MaxId from Student
+--Select Top 5 Id from Student
+--Select Top 50 percent Id from Student
+--Select DISTINCT name from Student
+--Select * from Student Where Name='Ali' AND ClassId = 2
+--Select * from Student Where Name='Ali' OR ClassId = 2
+--Select * from Student Where Name='Ali' OR ClassId = 2 AND Id=3
+--Select * from Student Where Name Like '%a%'
+--Select * from Student Where Name Like 'a%'
+--Select * from Student Where Name Like '%a'
+--Select * from Student Where Name IN('Haydar')
+--Select * from Student Where Id Between 0 AND 5 
+--Select * from Student Where Date Between '1948-11-11' AND '1948-11-12' 
+--Select Name,Count(Name) as NameCount from Student Group By Name Order By Name DESC
+--Select Name,Count(Name) as [NameCount] from Student Group By Name Having Count(Name) > 1
+--Insert
+--Insert into Student(Name) Values('Haydar')
+--Update
+--Update Student Set Name='Ali' Where Name='Ayla'
+--Delete
+--Delete from Student Where Id=2
+--Truncate
+--Truncate Table Student
+--Join
+--SELECT S.Id,S.Name,S.LessonId,L.Name AS LessonName ,S.ClassId , C.Name as ClassName FROM STUDENT AS S
+--	FULL JOIN LESSON AS L ON L.Id = S.LessonId
+--	FULL JOIN CLASS AS C ON C.Id = S.ClassId
+--Union
+--Select Name from Student 
+--Union Select Name from Lesson
+--Union Select Name from Class
